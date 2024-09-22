@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>تسک دوره جاوااسکریپت</title>
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="./styles/fonts.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <section>
+    <div class="main container">
+      <div class="header-transAction block">
+        <h3 class="title-transAction">لیست تراکنش ها</h3>
+        <input
+          type="text"
+          placeholder="جستجو تراکنش"
+          id="search"
+          class="hidden"
+        />
+      </div>
+      <button class="btn btn__primary">بارگزاری تراکنش ها</button>
+      <div class="transActiosTable hidden">
+        <h2>لیست تراکنش های شما</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>ردیف</th>
+              <th>نوع تراکنش</th>
+              <th class="price-icon">
+                <span class="price-action">مبلغ</span>
+                <a href="#"
+                  ><div class="fa fa-chevron-down" data-orderBy="price"></div
+                ></a>
+              </th>
+              <th>شماره پیگیری</th>
+              <th>
+                <span class="date-action">تاریخ تراکنش</span>
+                <a href="#"
+                  ><div class="fa fa-chevron-down" data-orderBy="date"></div
+                ></a>
+              </th>
+            </tr>
+          </thead>
+          <tbody class="details-transActions"></tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+  <body>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
